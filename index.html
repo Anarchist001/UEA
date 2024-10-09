@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Oficial de la UEA</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            color: #00FF00; /* Texto verde claro */
+            font-family: 'Georgia', serif; /* Fuente serif */
+            margin: 0;
+            padding: 20px;
+        }
+        #container {
+            display: flex; /* Usar flexbox para alinear elementos */
+            flex-direction: column; /* Colocar elementos en columna */
+            align-items: center; /* Centrar elementos */
+        }
+        #logo {
+            max-width: 150px; /* Ancho máximo del logo */
+            margin-bottom: 20px; /* Espaciado inferior */
+        }
+        #title {
+            font-size: 2em; /* Tamaño del título */
+            margin: 20px 0; /* Espaciado superior e inferior */
+        }
+        #slogan {
+            font-size: 1.5em; /* Tamaño del lema */
+            margin-bottom: 30px; /* Espaciado inferior */
+        }
+        .image-container {
+            display: flex; /* Usar flexbox para las imágenes */
+            flex-wrap: wrap; /* Permitir que las imágenes se ajusten */
+            justify-content: center; /* Centrar las imágenes */
+            gap: 20px; /* Espacio entre imágenes */
+        }
+        .image-item {
+            text-align: center; /* Centrar el texto de la descripción */
+            max-width: 200px; /* Ancho máximo de las imágenes */
+        }
+        img {
+            width: 100%; /* Imagen se ajusta al ancho del contenedor */
+            height: auto; /* Mantener la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        form {
+            background-color: rgba(0, 255, 0, 0.1); /* Fondo verde claro */
+            padding: 20px; /* Espacio interno */
+            border-radius: 10px; /* Bordes redondeados */
+            width: 100%; /* Ancho completo */
+            max-width: 400px; /* Ancho máximo del formulario */
+            margin-top: 20px; /* Espacio superior del formulario */
+        }
+        label {
+            display: block; /* Hacer que las etiquetas ocupen todo el ancho */
+            margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+        }
+        input, textarea {
+            width: 100%; /* Ancho completo */
+            padding: 10px; /* Espacio interno */
+            margin-bottom: 15px; /* Espacio entre campos */
+            border: 1px solid #00FF00; /* Borde verde claro */
+            border-radius: 5px; /* Bordes redondeados */
+            background-color: #1a1a1a; /* Fondo oscuro para campos */
+            color: #00FF00; /* Texto verde claro */
+        }
+        input[type="submit"] {
+            background-color: #00FF00; /* Fondo verde para el botón */
+            color: #000000; /* Texto negro */
+            border: none; /* Sin borde */
+            cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        }
+        input[type="submit"]:hover {
+            background-color: #00cc00; /* Cambio de color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="logo" src="UEA.png" alt="Logo de la UEA" style="width: 800px; height: auto;">
+        <div id="title">Unión de Españoles Anarquistas</div>
+        <div id="slogan">Igualdad, Libertad y Hermandad</div>
+        
+        <div>
+            <p>QUE ES LA UEA</p>
+            <p>Somos un grupo de gente que tiene unos mismos ideales y cree que el camino que la sociedad debe tomar es el de la paz, la libertad e igualdad.</p>
+            <p>Así mismo queremos acabar con toda forma de desigualdad tanto social como económica, no creemos en el estado ni en la monarquía, son figuras que aunque si tuvieron un papel importante hace tiempo ahora mismo solo buscan poder y beneficio. Queremos acabar con las clases sociales, todos tenemos derecho a disponer de todo.</p>
+           <P>     </P>
+            <P>MÁS CONTENIDO DENTRO DE POCO!</P>  
+        </div>
+        
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/movqapjd" method="POST"> <!-- URL de tu formulario de Formspree -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
